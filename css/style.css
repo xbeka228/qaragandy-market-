@@ -1,0 +1,160 @@
+/* общие стили, для телефонов */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222222;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #8e1b1b;
+}
+
+.header {
+  background-color: #c62828;
+  color: #ffffff;
+  padding: 16px;
+}
+
+.logo {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* меню */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.main {
+  padding: 16px;
+}
+
+h1,
+h2 {
+  color: #8e1b1b;
+}
+
+.intro {
+  background-color: #f0f0f0;
+  padding: 16px;
+}
+
+/* каталог */
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #cccccc;
+  padding: 12px;
+}
+
+.card h3 {
+  margin: 8px 0;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* формы */
+.form {
+  max-width: 480px;
+}
+
+.form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #555555;
+}
+
+.form input[type="checkbox"] {
+  width: auto;
+}
+
+.checkbox label {
+  display: inline;
+  font-weight: normal;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 14px;
+  background-color: #c62828;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.message {
+  font-weight: bold;
+  color: #8e1b1b;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  border-top: 1px solid #cccccc;
+  padding: 16px;
+  text-align: center;
+}
+
+/* планшеты */
+@media (min-width: 600px) {
+  .catalog {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* компьютеры */
+@media (min-width: 992px) {
+  .catalog {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Интернет-магазин Qaragandy Market: натуральный курт из Карагандинской области — коровий, козий, верблюжий, свежий и сушёный.">
+  <title>Qaragandy Market — курт от местных производителей</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    if (localStorage.getItem("currentUser") === null) {
+      location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <p class="logo">Qaragandy Market</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="login.html" id="logout">Выйти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="intro">
+      <h1>Курт из Карагандинской области</h1>
+      <p>Мы продаём домашний курт от местных семей и небольших ферм. Выберите свой вкус: от классического до острого.</p>
+    </section>
+
+    <section id="catalog">
+      <h2>Каталог</h2>
+      <div class="catalog">
+        <article class="card">
+          <img src="https://placehold.co/400x300/c62828/ffffff?text=Kurt" width="400" height="300" alt="Белые шарики натурального курта на тарелке">
+          <h3>Курт натуральный</h3>
+          <p>Классический курт из коровьего молока без добавок.</p>
+          <p>Вес: 200 г</p>
+          <p class="price">1 500 ₸</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x300/a1402f/ffffff?text=Kurt" width="400" height="300" alt="Мягкие свежие шарики курта в миске">
+          <h3>Курт свежий</h3>
+          <p>Мягкий курт, приготовленный на этой неделе.</p>
+          <p>Вес: 250 г</p>
+          <p class="price">1 800 ₸</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x300/8e1b1b/ffffff?text=Kurt" width="400" height="300" alt="Шарики верблюжьего курта на деревянной доске">
+          <h3>Курт верблюжий</h3>
+          <p>Необычный вкус из молока верблюдицы.</p>
+          <p>Вес: 200 г</p>
+          <p class="price">2 600 ₸</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x300/616161/ffffff?text=Kurt" width="400" height="300" alt="Горсть сушёных твёрдых шариков курта">
+          <h3>Курт сушёный</h3>
+          <p>Твёрдые шарики, которые хранятся долго.</p>
+          <p>Вес: 300 г</p>
+          <p class="price">2 000 ₸</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x300/5d4037/ffffff?text=Kurt" width="400" height="300" alt="Миска жидкого курта густой консистенции">
+          <h3>Курт жидкий</h3>
+          <p>Густая кисломолочная масса для супов и соусов.</p>
+          <p>Вес: 400 г</p>
+          <p class="price">1 700 ₸</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x300/9e6b00/ffffff?text=Kurt" width="400" height="300" alt="Шарики козьего курта на салфетке">
+          <h3>Курт козий</h3>
+          <p>Курт из козьего молока с мягким вкусом.</p>
+          <p>Вес: 200 г</p>
+          <p class="price">2 200 ₸</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x300/b71c1c/ffffff?text=Kurt" width="400" height="300" alt="Шарики острого курта, посыпанные красным перцем">
+          <h3>Курт острый</h3>
+          <p>Курт с красным перцем и специями.</p>
+          <p>Вес: 250 г</p>
+          <p class="price">1 900 ₸</p>
+        </article>
+        <article class="card">
+          <img src="https://placehold.co/400x300/455a64/ffffff?text=Kurt" width="400" height="300" alt="Солёные шарики курта в небольшой пиале">
+          <h3>Курт солёный</h3>
+          <p>Хорошая закуска к чаю и к пиву.</p>
+          <p>Вес: 300 г</p>
+          <p class="price">1 600 ₸</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>О нас</h2>
+      <p>Какой-то текст о компании.</p>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Адрес: г. Караганда, Строителей 17</p>
+      <p>Телефон: +7 (707) 450-86-63</p>
+      <p>E-mail: xbeka228@gmail.com</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Qaragandy Market — курт от местных производителей Карагандинской области</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
